@@ -3,8 +3,8 @@ $(document).ready(function () {
     $(".login-form form").on("submit", function (event) {
       event.preventDefault(); // Menghentikan pengiriman formulir
   
-      var email = $("input[type='text']").val(); // Mendapatkan nilai email
-      var password = $("input[type='password']").val(); // Mendapatkan nilai password
+      var email = $("input[type='text']").val(); 
+      var password = $("input[type='password']").val(); 
   
       // Gantilah kondisi ini dengan logika validasi yang sesuai
       if (email === "contoh@email.com" && password === "riziq") {
