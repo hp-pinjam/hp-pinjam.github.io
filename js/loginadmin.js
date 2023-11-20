@@ -2,8 +2,8 @@
 
 // Mock data for admin credentials
 const adminCredentials = {
-    username: 'admin',
-    password: 'admin123'
+    username: 'ludha',
+    password: 'ludha1234'
   };
   
   // Function to handle the login process
