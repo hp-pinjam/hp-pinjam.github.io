@@ -18,8 +18,8 @@ const adminCredentials = {
   }
   
   // Example usage
-  const usernameInput = 'admin';
-  const passwordInput = 'admin123';
+  const usernameInput = 'ludha';
+  const passwordInput = 'ludha1234';
   
   // Call the login function with the provided credentials
   loginAdmin(usernameInput, passwordInput);
