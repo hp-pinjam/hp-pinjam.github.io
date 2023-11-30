@@ -3,7 +3,7 @@
 // Mock data for admin credentials
 const adminCredentials = {
   username: 'ludha',
-  password: 'ludha1234'
+  password: 'ludha'
 };
 
 // Function to handle the login process
@@ -19,7 +19,7 @@ function loginAdmin(username, password) {
 
 // Example usage
 const usernameInput = 'ludha';
-const passwordInput = 'ludha1234';
+const passwordInput = 'ludha';
 
 // Call the login function with the provided credentials
 loginAdmin(usernameInput, passwordInput);
