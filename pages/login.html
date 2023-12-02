@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- <script src="../js/login.js"></script> -->
-    <script src="../js/controller/controller.js"></script>
+    <!-- <script src="../js/controller/controller.js"></script> -->
    </head>
 <body>
   <div class="container">
@@ -32,7 +32,7 @@
             <div class="input-boxes">
                 <div class="input-box">
                   <i class="fas fa-envelope"></i>
-                  <input type="text" placeholder="Enter your email" autocomplete="email" id="username" value="" required>
+                  <input type="text" placeholder="Enter your email" autocomplete="username" id="username" value="" required>
                 </div>
                 <div class="input-box">
                   <i class="fas fa-lock"></i>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="text"><a href="#">Forgot password?</a></div>
                 <div class="button input-box">
-                  <input type="submit" value="Sumbit">
+                  <input type="submit" value="Sumbit" id="buttonlogin">
                 </div>
                 <div class="text sign-up-text">Don't have an account? <label for="flip">Signup now</label></div>
                 <div class="text">
@@ -82,5 +82,6 @@
     </div>
     </div>
   </div>
+  <script type="module" src="../js/crooot.js"></script>
 </body>
 </html>
