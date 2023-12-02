@@ -22,7 +22,7 @@ function responseData(result) {
         // Jika pesan adalah "Selamat Datang", arahkan ke halaman dashboard.
         window.location.href = "hp.html"; // Gantilah "error.html" dengan halaman error yang sesuai.
     } else {
-        // Penanganan lainnya (pesan kesalahan lainnya)
+        
         window.location.href = "login.html";
     }
 }
