@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title>Login and Registration</title>
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="icon" type="image/x-icon" href="../assets/img/logo.png" />
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Letakkan kode ini di dalam elemen <head> Anda -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/loginadmin.js"></script>
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Admin</title>
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="icon" type="image/x-icon" href="../assets/img/logo.png" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/gh/hp-pinjam/js-frontend@0.0.2/js/crooots.js"></script>
+</head>
+
 <body>
   <div class="container">
     <input type="checkbox" id="flip">
@@ -24,93 +25,35 @@
       </div>
     </div>
     <div class="forms">
-        <div class="form-content">
-          <div class="login-form">
-            <div class="title">Login</div>
-          <form action="#" id="loginForm">
+      <div class="form-content">
+        <div class="login-form">
+          <div class="title">Login Admin</div>
+          <form id="adminLoginForm" action="#">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Enter your email" autocomplete="email"
-                id="username" value="contoh@email.com" required>
+                <input type="text" placeholder="Masukkan email admin Anda" autocomplete="username" id="adminUsername" value="" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter your password" autocomplete="password" id="password" value="riziq" required>
+                <input type="password" placeholder="Masukkan kata sandi admin Anda" autocomplete="password" id="adminPassword" value="" required>
               </div>
-              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="text"><a href="#">Lupa kata sandi?</a></div>
               <div class="button input-box">
-                <input type="submit" value="Login">
+                <input type="submit" value="Kirim" id="adminLoginButton">
               </div>
-              <div class="text sign-up-text">Don't have an account? <label for="flip">Signup now</label></div>
+              <div class="text sign-up-text">Belum punya akun? <label for="flip">Daftar sekarang</label></div>
               <div class="text">
                 <a href="../index.html">
-                    <i class="fa fa-arrow-left"></i> Back
+                  <i class="fa fa-arrow-left"></i> Kembali
                 </a>
-              </div>            
-            </div>
-          </form>
-        </div>
-        <div class="signup-form">
-          <div class="title">Signup</div>
-          <form action="#" id="signupForm">
-            <div class="input-boxes">
-              <div class="input-box">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Enter your name" required>
               </div>
-              <div class="input-box">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Enter your email" required>
-              </div>
-              <div class="input-box">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Enter your password" required>
-              </div>
-              <div class="button input-box">
-                <input type="submit" value="Submit">
-              </div>
-              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
-              <div class="text">
-                <a href="../index.html">
-                    <i class="fa fa-arrow-left"></i> Back
-                </a>
-              </div>            
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-
-  <script>
-    $(document).ready(function(){
-      $("#loginForm").submit(function(e){
-        e.preventDefault();
-        // Gantilah dengan logika login sesuai kebutuhan Anda
-        var username = $("#username").val();
-        var password = $("#password").val();
-
-        if (username === "ludha" && password === "ludha") {
-          // Jika login sebagai admin
-          Swal.fire({
-            icon: 'success',
-            title: 'Login Successful',
-            text: 'Welcome Admin!',
-          });
-        } else {
-          // Jika login sebagai pengguna biasa
-          Swal.fire({
-            icon: 'success',
-            title: 'Login Successful',
-            text: 'Welcome User!',
-          });
-        }
-      });
-
-      // Tambahkan logika untuk form signup jika diperlukan
-    });
-  </script>
-
 </body>
+<script type="module" src="https://cdn.jsdelivr.net/gh/hp-pinjam/js-frontend@0.0.2/js/crooots.js"></script>
 </html>
